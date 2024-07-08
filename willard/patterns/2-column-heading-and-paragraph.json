@@ -1,0 +1,6 @@
+{
+  "__file": "wp_block",
+  "title": "2 column Heading and paragraph",
+  "content": "<!-- wp:group {\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group\"><!-- wp:columns {\"verticalAlignment\":null} -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"verticalAlignment\":\"top\"} -->\n<div class=\"wp-block-column is-vertically-aligned-top\"><!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Senectus et netus et malesuada fames</strong></h2>\n<!-- /wp:heading --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:paragraph -->\n<p>Vitae aliquet nec ullamcorper sit. Aenean sed adipiscing diam donec adipiscing tristique risus. Lacinia at quis risus sed vulputate. Etiam sit amet nisl purus in mollis nunc sed. Nec feugiat nisl pretium fusce id velit. Ultrices dui sapien eget mi proin sed. Mi eget mauris pharetra et ultrices neque.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns --></div>\n<!-- /wp:group -->",
+  "syncStatus": ""
+}
