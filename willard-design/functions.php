@@ -5,35 +5,6 @@ function willard_design_setup() {
     add_theme_support('wp-block-styles');
 }
 
-// Template quick edit
-function willard_design_add_template_quick_edit($column_name, $post_type) {
-    if ($post_type != 'page') return;
-    ?>
-    <fieldset class="inline-edit-col-right">
-        <div class="inline-edit-col">
-            <label>
-                <span class="title"><?php _e( 'Template', 'willard-design' ); ?></span>
-                <span class="input-text-wrap">
-                    <select name="page_template">
-                        <option value=""><?php _e( 'Default Template', 'willard-design' ); ?></option>
-                        <?php page_template_dropdown(); ?>
-                    </select>
-                </span>
-            </label>
-        </div>
-    </fieldset>
-    <?php
-}
-add_action('quick_edit_custom_box', 'willard_design_add_template_quick_edit', 10, 2);
-
-// Save the template from Quick Edit
-function willard_design_save_template_quick_edit($post_id) {
-    if (!isset($_POST['page_template'])) return;
-    $template = $_POST['page_template'];
-    update_post_meta($post_id, '_wp_page_template', $template);
-}
-add_action('save_post', 'willard_design_save_template_quick_edit');
-
 // CSS embed
 if ( ! function_exists( 'willard_design_locale_css' ) ) :
     function willard_design_locale_css( $uri ) {
@@ -67,7 +38,7 @@ add_action( 'wp_enqueue_scripts', 'willard_design_javascript' );
 if ( ! function_exists( 'willard_design_localize_script' ) ) :
     function willard_design_localize_script() {
         wp_localize_script( 'willard-design-back-to-top', 'willard_design_vars', array(
-            'back_to_top_icon' => esc_url( get_template_directory_uri() . '/assets/images/up-arrow-thumb.png' )
+            'back_to_top_icon' => esc_url( get_template_directory_uri() . '/assets/images/up-arrow.svg' )
         ));
     }
 endif;

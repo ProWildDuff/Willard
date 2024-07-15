@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="20mm" height="10mm"
+     viewBox="-5 -5 90 50"
+     class="willard-design-top-of-page">
+  <path fill="currentColor"
+        d="M 0,40
+           L 40,0
+           L 80,40
+           L 60,40
+           L 40,20
+           L 20,40
+           Z" />
+</svg>
