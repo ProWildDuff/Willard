@@ -300,28 +300,6 @@
 				{
 					"fontFace": [
 						{
-							"fontFamily": "Instrument Serif",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/instrument-serif_normal_400.ttf"
-							]
-						},
-						{
-							"fontFamily": "Instrument Serif",
-							"fontStyle": "italic",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/instrument-serif_italic_400.ttf"
-							]
-						}
-					],
-					"fontFamily": "Instrument Serif",
-					"slug": "instrument-serif"
-				},
-				{
-					"fontFace": [
-						{
 							"fontFamily": "Instrument Sans",
 							"fontStyle": "normal",
 							"fontWeight": "400",
