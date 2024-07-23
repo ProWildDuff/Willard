@@ -1,97 +1,90 @@
 :root {
-  font-size: 16px;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-.wp-block-site-title a {
-	text-decoration: none !important;
+    font-size: 16px;
 }
 
 /*fixed header*/
 
-.willard-design-main-header {
-	position: fixed;
-	top: 0;
-	right: 0;
-	z-index: 20;
-	padding-top: 4vh;
-	padding-bottom: 2vh;
-	padding-right: 5%;
-	padding-left: 5%;
-	width: 100%;
-	justify-content: space-between;
-	background-color: var(--wp--preset--color--primary-2);
+.willard-design-main-header-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+}
+
+.willard-design-main-header-content  {
+    max-width: var(--wp--style--global--content-size);
+    margin: 0 auto;
 }
 
 /* back to top button */
 .willard-design-top-of-page {
-  position: fixed;
-  bottom: 2%;
-  right: 2%;
-  padding: 1%;
-  transition: background-color 0.3s;
-  border: none;
-  z-index: 999;
-  fill: var(--wp--preset--color--white);
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    padding: 1%;
+    transition: background-color 0.3s;
+    border: none;
+    z-index: 999;
+    fill: var(--wp--preset--color--primary-3);
 }
 
 /* handles the wordpress navigation block */
 .wp-block-navigation .wp-block-navigation__submenu-container li > a {
-		background-color: #ffffffCC !important;
-		color: #000000 !important;
+    background-color: var(--wp--preset--color--secondary-1) !important;
+    color: var(--wp--preset--color--primary-3) !important;
 }
 
 .wp-block-navigation .wp-block-navigation__submenu-container li:hover > a {
-	background-color: #808080CC !important;
-	color: #ffffff !important;
+    background-color: var(--wp--preset--color--secondary-2) !important;
+    color: var(--wp--preset--color--primary-3) !important;
 }
 
 .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
-	background-color: inherit !important;
+    background-color: inherit !important;
 }
 
 /* Accessibility */
 /* Text meant only for screen readers. */
 .screen-reader-text {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute !important;
-  width: 1px;
-  word-wrap: normal !important;
-  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
 .screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  clip-path: none;
-  color: #21759b;
-  display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: bold;
-  height: auto;
-  right: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000;
-  /* Above WP toolbar. */
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    right: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
 }
 
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus {
-  outline: 0;
+    outline: 0;
 }
