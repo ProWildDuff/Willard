@@ -1,9 +1,7 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:spacer {"height":"5vw"} -->
-<div style="height:5vw" aria-hidden="true" id="content" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:0"><!-- wp:post-content {"layout":{"type":"default"}} /--></main>
+<!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

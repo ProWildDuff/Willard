@@ -13,7 +13,7 @@ Theme developed by Will Duffy
 
 == Changelog ==
 
-= 1.2.0 =
+= 1.2.1 =
 * Initial release
 
 == Copyright ==
